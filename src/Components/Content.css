@@ -1,0 +1,101 @@
+.content {
+  padding: 8rem 2rem 2rem;
+  height: 100%;
+  width: calc(100% - 15rem);
+  overflow-y: scroll;
+}
+
+.content ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content ul article {
+  width: 100%;
+}
+
+.content li {
+  background: rgb(84, 112, 155);
+  width: calc((100% - 6rem) / 4);
+  padding: 1rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  border-radius: .3rem;
+  box-shadow: 0 .4rem .5rem rgba(0,0,0,0.1);
+}
+
+.content li:nth-of-type(4n) {
+  margin-right: 0;
+}
+
+.content li h2 {
+  margin: 0 0 .1em 0;
+}
+
+.content li a {
+  text-decoration: none;
+  color: gainsboro;
+}
+
+.content li a:hover {
+  text-decoration: underline;
+}
+
+.content li p {
+  margin: 0;
+  font-size: 0.8rem;
+  margin-bottom: 1.4rem;
+}
+
+.content li button {
+  background: rgb(54, 56, 82);
+  border: none;
+  padding: .8rem 1rem;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  cursor: pointer;
+  transition: all .2s ease;
+  border-radius: .3rem;
+}
+
+.content li button:hover {
+  background: rgb(48, 78, 122);
+}
+
+.content li.add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 1px dashed rgb(54, 56, 82);
+  box-shadow: none;
+  transition: all .2s ease;
+}
+
+.content li.add:hover {
+  background: rgba(0,0,0,0.1);
+}
+
+.content li.add button {
+  background: none;
+  color: rgb(54, 56, 82);
+  font-size: 1rem;
+  height: 100%;
+  width: 100%;
+}
+
+.content::-webkit-scrollbar{
+  background-color: rgb(175, 180, 245);
+
+}
+
+#form-input {
+  margin-left: 2rem;
+  width: 75%;
+}
+
+#folder-label {
+margin-left: 2rem; 
+}

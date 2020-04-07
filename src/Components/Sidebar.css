@@ -1,0 +1,67 @@
+.sidebar {
+  width: 15rem;
+  background: rgb(54, 56, 82);
+  color: white;
+  padding-top: 6rem;
+  height: 100%;
+}
+
+.sidebar article button {
+  margin-bottom: 1rem;
+}
+
+.sidebar article h3 {
+  padding: 1rem 2rem;
+  margin: 0;
+  text-align: right;
+}
+
+.sidebar article h3::after {
+  content: "<";
+  display: inline-block;
+  margin-left: 1rem;
+  opacity: 0.5;
+}
+
+.sidebar ul li {
+  font-weight: bold;
+  border-left: 5px solid transparent;
+  transition: all .2s ease;
+}
+
+.sidebar ul li:not(:last-of-type):hover {
+  background: rgba(0,0,0,0.2);
+}
+
+.sidebar ul li.active {
+  border-color: white;
+}
+
+.sidebar ul li a {
+  display: block;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.sidebar ul li:last-of-type {
+  margin-top: 4rem;
+}
+
+.sidebar button {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  background: rgba(0,0,0,0.2);
+  width: calc(100% - 4rem);
+  border: none;
+  padding: 1rem;
+  color: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all .2s ease;
+  border-radius: .3rem;
+}
+
+.sidebar button:hover {
+  background: rgba(0,0,0,0.4);
+}

@@ -1,0 +1,24 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 15rem;
+  right: 0;
+  height: 6rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(48, 78, 122);
+  box-shadow: 0 .2rem 1rem rgba(0,0,0,0.1)
+}
+
+header h1 {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+header a {
+  color: gainsboro;
+  text-decoration: none;
+}
