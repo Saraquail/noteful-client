@@ -7,13 +7,7 @@ class SelectedFolder extends React.Component {
   render() {
     let notes =  this.context.data.notes
     let note_id = parseInt(this.props.match.params.note_id)
-    // console.log('notes', notes)
-    // console.log('params', note_id)
-
     let note = notes.find(n => n.id === note_id) || {};
-    // console.log('note[1]', notes[1])
-    // console.log('note', note)
-  
     let folder = this.context.data.folders.find(f => f.id === note.folder_id) || {};
 
     return (

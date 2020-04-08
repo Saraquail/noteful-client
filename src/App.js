@@ -48,7 +48,6 @@ class App extends React.Component {
   // }
 
   handleDeleteNote = (note_id) => {
-    console.log(note_id)
     // const currentState = { ...this.state };
     // let note = currentState.notes.find(n => n.id === note_id);
     // let index = currentState.notes.indexOf(note);
@@ -97,8 +96,6 @@ class App extends React.Component {
     api.getFolders()
     .then(data => {
       this.setState({ folders: data })
-      console.log(data)
-
     })
     .catch(err => {
       console.error(err);

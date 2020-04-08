@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:8000/api';
+const BASE_URL = 'https://stormy-ravine-21598.herokuapp.com/';
 
 const doFetch = (...params) => {
   return fetch(...params)
@@ -28,7 +28,6 @@ const addFolder = folder => {
 }
 
 const addNote = note => {
-  console.log(note)
   return doFetch(BASE_URL + '/notes', {
     method: 'POST',
     headers: {'content-type': 'application/json'},

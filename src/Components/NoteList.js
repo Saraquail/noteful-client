@@ -21,7 +21,6 @@ class NoteList extends React.Component {
 
       })
       .catch((error) => {
-        console.log(error)
       })
   }
     
@@ -29,7 +28,6 @@ class NoteList extends React.Component {
     const id = parseInt(this.props.match.params.id) || null;
     let notes = this.context.data.notes;
     let noteContent = "";
-    console.log(this.context)
 
     if (id) {
       let allnotes = this.context.data.notes

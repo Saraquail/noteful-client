@@ -14,13 +14,11 @@ class AddNote extends React.Component {
     let modified = new Date(date).toLocaleDateString()
     const note = {
       note_name: nName,
-      modified: modified,
+      date_modified: modified,
       folder_id: folder_id,
       content: content,
     }
     
-
-    console.log(modified)
 
     api.addNote(note)
       .then(() =>{
